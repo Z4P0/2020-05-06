@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        line-height: 1.616;
+        margin: 0;
+        width: 100vw;
+        /*padding: 1rem;*/
+      }
+      section {
+        max-width: 45em;
+        margin: 0 auto 2rem;
+      }
+      .container {
+        background-color: tomato;
+        background: rgb(118,131,217);
+        /*background: linear-gradient(90deg, rgba(118,131,217,1) 0%, rgba(216,160,254,1) 100%);*/
+        /*background: linear-gradient(90deg, rgba(216,160,254,1) 0%, rgba(118,131,217,1) 100%);*/
+        background: linear-gradient(0deg, rgba(216,160,254,1) 0%, rgba(118,131,217,1) 100%);
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        /*height: 98.75vh;*/
+        width: 100vw;
+      }
+
+      /* v1 */
+      /*==================================================*/
+      .container div {
+        height: 100%;
+        /*width: 10vw;*/
+        width: 100vw;
+      }
+      .container div:nth-child(1) {
+        background-color: rgba(23,23,23,.05);
+      }
+      .container div:nth-child(2) {
+        background-color: rgba(23,23,23,.1);
+      }
+      .container div:nth-child(3) {
+        background-color: rgba(23,23,23,.15);
+      }
+      .container div:nth-child(4) {
+        background-color: rgba(23,23,23,.2);
+      }
+      .container div:nth-child(5) {
+        background-color: rgba(23,23,23,.25);
+      }
+      .container div:nth-child(6) {
+        background-color: rgba(23,23,23,.3);
+      }
+      .container div:nth-child(7) {
+        background-color: rgba(23,23,23,.35);
+      }
+      .container div:nth-child(8) {
+        background-color: rgba(23,23,23,.4);
+      }
+      .container div:nth-child(9) {
+        background-color: rgba(23,23,23,.45);
+      }
+      .container div:nth-child(10) {
+        background-color: rgba(23,23,23,.5);
+      }
+
+
+      /* v2 */
+      /*==================================================*/
+      .container div {
+        transition: opacity 0.2s ease;
+        transition: opacity 0.3s cubic-bezier(.17,.67,.83,.67);
+        opacity: 0.9;
+      }
+/*      .container div:hover {
+        opacity: 0.95;
+      }*/
+
+/*      .container div:nth-child(1):hover {
+        opacity: .90;
+      }
+      .container div:nth-child(2):hover {
+        opacity: .91;
+      }
+      .container div:nth-child(3):hover {
+        opacity: .92;
+      }
+      .container div:nth-child(4):hover {
+        opacity: .93;
+      }
+      .container div:nth-child(5):hover {
+        opacity: .94;
+      }
+      .container div:nth-child(6):hover {
+        opacity: .95;
+      }
+      .container div:nth-child(7):hover {
+        opacity: .96;
+      }
+      .container div:nth-child(8):hover {
+        opacity: .97;
+      }
+      .container div:nth-child(9):hover {
+        opacity: .98;
+      }
+      .container div:nth-child(10):hover {
+        opacity: .99;
+      }
+*/
+
+      .container div:nth-child(1):hover {
+        opacity: .99;
+      }
+      .container div:nth-child(2):hover {
+        opacity: .98;
+      }
+      .container div:nth-child(3):hover {
+        opacity: .97;
+      }
+      .container div:nth-child(4):hover {
+        opacity: .96;
+      }
+      .container div:nth-child(5):hover {
+        opacity: .95;
+      }
+      .container div:nth-child(6):hover {
+        opacity: .94;
+      }
+      .container div:nth-child(7):hover {
+        opacity: .93;
+      }
+      .container div:nth-child(8):hover {
+        opacity: .92;
+      }
+      .container div:nth-child(9):hover {
+        opacity: .91;
+      }
+      .container div:nth-child(10):hover {
+        opacity: .90;
+      }
+
+
+
+
+      /* v3 */
+      /*==================================================*/
+/*      .container + .container {
+        background: linear-gradient(0deg, rgba(216,160,254,1) 0%, rgba(118,131,217,1) 100%);
+        flex-direction: column-reverse;
+      }
+      .container + .container div {
+        width: 100vw;
+      }*/
+      /*.container + .container div:nth-child(1) {
+        background-color: rgba(23,23,23,.05);
+      }
+      .container + .container div:nth-child(2) {
+        background-color: rgba(23,23,23,.1);
+      }
+      .container + .container div:nth-child(3) {
+        background-color: rgba(23,23,23,.15);
+      }
+      .container + .container div:nth-child(4) {
+        background-color: rgba(23,23,23,.2);
+      }
+      .container + .container div:nth-child(5) {
+        background-color: rgba(23,23,23,.25);
+      }
+      .container + .container div:nth-child(6) {
+        background-color: rgba(23,23,23,.3);
+      }
+      .container + .container div:nth-child(7) {
+        background-color: rgba(23,23,23,.35);
+      }
+      .container + .container div:nth-child(8) {
+        background-color: rgba(23,23,23,.4);
+      }
+      .container + .container div:nth-child(9) {
+        background-color: rgba(23,23,23,.45);
+      }
+      .container + .container div:nth-child(10) {
+        background-color: rgba(23,23,23,.5);
+      }*/
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
